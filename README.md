@@ -27,6 +27,8 @@ OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
 
 ## Хэсэг B — CFG ба 100% бүтцийн хамралт
 
+`cfg.png`-д `scholarship()`-ийн зангилаа, ирмэгүүдийг үзүүлж, ирмэг бүрийг тестийн бодит методын нэртэй холбосон. Эхний validation-ийн гурван OR нөхцөл тус бүрийн алдааны зам `assertThrows` тесттэй.
+
 100% мөр ба салааны хамралтад хүрэхэд A ба B-ийн нийлбэрээр нийт **19 тест** ажилласан (`results/mvn-verify-B.txt`: `Tests run: 19, Failures: 0, Errors: 0, Skipped: 0`). `results/jacoco-B.csv`-д `BRANCH_MISSED = 0`, `LINE_MISSED = 0` бөгөөд Branch 41/41, Line 25/25 байна. A ба B үеийн хэмжилтүүдийг `results/` дотор тус тусад нь хадгалсан.
 
 ## Хэсэг C — Давталтын заагийн тестүүд
