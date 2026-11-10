@@ -7,8 +7,8 @@
 ```text
 $ java -version
 openjdk version "17.0.20.1" 2026-08-18
-OpenJDK Runtime Environment Temurin-17.0.20.1.1 (build 17.0.20.1+1)
-OpenJDK 64-Bit Server VM Temurin-17.0.20.1.1 (build 17.0.20.1+1, mixed mode, sharing)
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+OpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)
 
 $ mvn -version
 Apache Maven 3.9.15 (98b2cdbfdb5f1ac8781f537ea9acccaed7922349)
@@ -28,7 +28,7 @@ OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
 
 `cfg.png` зурагт `scholarship()`-ийн зангилаа, ирмэгүүд болон тухайн ирмэгийг туулдаг тестийн методын нэрсийг тэмдэглэв. Үүнд эхний validation-ийн гурван нөхцөлийн `assertThrows` тестүүд тус тусдаа орсон.
 
-100% мөр ба салааны хамралтад хүрэхэд B шатанд нийт ___ тест ажилласан. `results/jacoco-B.csv`-д `BRANCH_MISSED = 0`, `LINE_MISSED = 0` байх ёстой; A ба B үеийн хэмжилтүүдийг `results/` дотор тус тусад нь хадгалсан.
+100% мөр ба салааны хамралтад хүрэхэд A ба B-ийн нийлбэрээр нийт **19 тест** ажилласан (`results/mvn-verify-B.txt`: `Tests run: 19, Failures: 0, Errors: 0, Skipped: 0`). `results/jacoco-B.csv`-д `BRANCH_MISSED = 0`, `LINE_MISSED = 0` бөгөөд Branch 41/41, Line 25/25 байна. A ба B үеийн хэмжилтүүдийг `results/` дотор тус тусад нь хадгалсан.
 
 ## AI туслахын хэрэглээ
 
