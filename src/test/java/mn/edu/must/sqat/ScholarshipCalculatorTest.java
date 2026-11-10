@@ -43,6 +43,17 @@ class ScholarshipCalculatorTest {
     }
 
     @Test
+    void letterGradeSpecificationBoundaries() {
+        assertEquals("D", calculator.letterGrade(60));
+        assertEquals("F", calculator.letterGrade(59.99));
+        assertEquals("D", calculator.letterGrade(69.99));
+        assertEquals("F", calculator.letterGrade(0));
+        assertEquals("A", calculator.letterGrade(100));
+        assertEquals("B", calculator.letterGrade(89.99));
+        assertEquals("A", calculator.letterGrade(90));
+    }
+
+    @Test
     void letterGradeBelowZeroThrows() {
         assertThrows(IllegalArgumentException.class, () -> calculator.letterGrade(-1));
     }
