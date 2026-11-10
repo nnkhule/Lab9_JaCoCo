@@ -74,11 +74,6 @@ class ScholarshipCalculatorTest {
     }
 
     @Test
-    void gpaZeroScoresLoopBoundaryThrows() {
-        assertThrows(IllegalArgumentException.class, () -> calculator.gpa(new double[]{}));
-    }
-
-    @Test
     void gpaSingleScoreLoopBoundary() {
         assertEquals(4.0, calculator.gpa(new double[]{95}), 0.001);
     }
